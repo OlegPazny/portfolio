@@ -1,0 +1,19 @@
+.add-info{
+    word-wrap: break-word;
+    margin-top:2%;
+}
+.info-list li{
+    margin:1%;
+}
+.gallery-info{
+    border-top:2px solid rgb(48, 28, 0);
+    width:100%;
+    padding:1% 2%;
+}
+.gallery-info *{
+    color: black;
+    font-weight: bold;
+}
+.ftco-bread{
+    padding-bottom:-1%;
+}
