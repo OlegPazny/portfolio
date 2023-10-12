@@ -17,3 +17,7 @@
 .ftco-bread{
     padding-bottom:-1%;
 }
+.about-author img{
+    -webkit-border-radius: 2%;
+    border-radius: 2%;
+}
