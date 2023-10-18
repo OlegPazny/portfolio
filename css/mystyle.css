@@ -21,3 +21,7 @@
     -webkit-border-radius: 2%;
     border-radius: 2%;
 }
+.compare-img{
+    display: flex;
+    flex-direction: row;
+}
