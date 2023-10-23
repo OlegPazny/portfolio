@@ -39,4 +39,21 @@
     width:100%;
     height:100px;
 }
-
+.hero-wrap .text h2{
+    letter-spacing: 1px;
+    font-weight: 900;
+    color:#ccb78f;
+}
+.hero-wrap .text .desc h2.big-letter{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    color: #ededed;
+    z-index: -1;
+    font-size: 70px;
+    line-height: 1;
+}
+.hero-wrap .text h2 span{
+    color: black;
+}
