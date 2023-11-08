@@ -7309,7 +7309,7 @@ h1, h2, h3, h4, h5,
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif; }
+  font-family: "Manrope"; }
 
 #colorlib-page {
   width: 100%;
@@ -7648,7 +7648,13 @@ h1, h2, h3, h4, h5,
     overflow-y: scroll; }
     @media (max-width: 767.98px) {
       .hero-wrap .author-info {
-        width: 70%; } }
+        width: 95%; }
+      .author-image{
+        display: none;
+      }
+      .mb-4{
+        text-align: justify;
+      } }
     .hero-wrap .author-info h3.signature {
       font-family: "Herr Von Muellerhoff", cursive; }
   .hero-wrap .author-image .author-img {
