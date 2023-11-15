@@ -1,0 +1,32 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^seo.belstu.by/Basalay/
+RewriteRule (.*) https://www.seo.belstu.by/Basalay/$1 [R=301,L]
+
+ErrorDocument 404 http://www.seo.belstu.by/Basalay/404.html
+
+<ifModule mod_headers.c>
+#кэшировать HTML и HTM файлы на один день
+<FilesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=43200"
+</FilesMatch>
+#кэшировать CSS, JavaScript и текстовые файлы на одну неделю
+<FilesMatch "\.(js|css|txt)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+#кэшировать флэш и изображения на месяц
+<FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+#отключить кэширование
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/css
+</IfModule>
